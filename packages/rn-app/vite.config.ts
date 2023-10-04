@@ -12,5 +12,14 @@ export default defineConfig({
     esbuildOptions: {
       resolveExtensions: ['.web.js', '.web.ts', '.web.tsx', '.js', '.ts', '.jsx', '.tsx'],
     },
+    exclude: ['@sqlite.org/sqlite-wasm'],
+  },
+
+  // For sqlite wasm
+  server: {
+    headers: {
+      'Cross-Origin-Opener-Policy': 'same-origin',
+      'Cross-Origin-Embedder-Policy': 'require-corp',
+    },
   },
 });
