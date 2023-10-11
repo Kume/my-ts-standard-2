@@ -8,7 +8,7 @@
 import React from 'react';
 import {SafeAreaView, StatusBar, StyleSheet, Text, useColorScheme, View} from 'react-native';
 
-function App(): JSX.Element {
+function App(): React.ReactNode {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
