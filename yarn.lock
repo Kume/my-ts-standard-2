@@ -2859,7 +2859,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@my-ts-standard/common@workspace:packages/common":
+"@my-ts-standard/common@workspace:^, @my-ts-standard/common@workspace:packages/common":
   version: 0.0.0-use.local
   resolution: "@my-ts-standard/common@workspace:packages/common"
   dependencies:
@@ -4137,6 +4137,7 @@ __metadata:
     "@babel/core": "npm:^7.25.2"
     "@babel/preset-env": "npm:^7.25.4"
     "@babel/runtime": "npm:^7.25.6"
+    "@my-ts-standard/common": "workspace:^"
     "@react-native/eslint-config": "npm:^0.75.3"
     "@react-native/metro-config": "npm:^0.75.3"
     "@tsconfig/react-native": "npm:^3.0.5"

@@ -6,11 +6,28 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: [{find: /^react-native$/, replacement: 'react-native-web'}],
-    extensions: ['.web.js', '.web.ts', '.web.tsx', '.js', '.ts', '.jsx', '.tsx'],
+    extensions: [
+      '.web.js',
+      '.web.ts',
+      '.web.tsx',
+      '.js',
+      '.ts',
+      '.jsx',
+      '.tsx',
+    ],
+    conditions: ['source'],
   },
   optimizeDeps: {
     esbuildOptions: {
-      resolveExtensions: ['.web.js', '.web.ts', '.web.tsx', '.js', '.ts', '.jsx', '.tsx'],
+      resolveExtensions: [
+        '.web.js',
+        '.web.ts',
+        '.web.tsx',
+        '.js',
+        '.ts',
+        '.jsx',
+        '.tsx',
+      ],
     },
   },
 });

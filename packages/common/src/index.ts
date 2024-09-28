@@ -2,4 +2,6 @@ export function mapObject<T, R>(values: Record<string, T>, mapper: (value: T, ke
   return Object.entries(values).map(([key, value]) => mapper(value, key));
 }
 
-export function mapObjectToObject<T, R>() {}
+export function sumNumbers(values: readonly number[]): number {
+  return values.reduce((previous, current) => previous + current, 0);
+}

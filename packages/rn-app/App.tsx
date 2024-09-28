@@ -5,8 +5,16 @@
  * @format
  */
 
+import {sumNumbers} from '@my-ts-standard/common';
 import React from 'react';
-import {SafeAreaView, StatusBar, StyleSheet, Text, useColorScheme, View} from 'react-native';
+import {
+  SafeAreaView,
+  StatusBar,
+  StyleSheet,
+  Text,
+  useColorScheme,
+  View,
+} from 'react-native';
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -22,7 +30,7 @@ function App(): JSX.Element {
         backgroundColor={backgroundStyle.backgroundColor}
       />
       <View style={styles.view}>
-        <Text>Test</Text>
+        <Text>SUM = {sumNumbers([1, 2, 3])}</Text>
       </View>
     </SafeAreaView>
   );
