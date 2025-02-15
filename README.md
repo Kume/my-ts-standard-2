@@ -77,6 +77,8 @@ yarn add --dev typescript turbo prettier @typescript-eslint/parser @typescript-e
   - ルートで個別設定はoverridesするのが良いかも https://qiita.com/isoken26/items/9af0b122beb826f38d46
 - tsconfigの設定内容見直し
 - turboの設定
+- react-nativeのtsconfig、eslint設定を見てみる
+  - 特別なことをしてなければプロジェクト共通設定を使うようにする
 
 ## 要調査
 

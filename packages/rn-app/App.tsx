@@ -16,7 +16,7 @@ import {
   View,
 } from 'react-native';
 
-function App(): JSX.Element {
+function App(): React.ReactNode {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
